@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed&display=swap');
+html, body {
+margin: 0 auto;
+}
+
+* {
+  box-sizing: none;
+}
+
+body {
+  background-color: #dedede;
+}
+
+.image {
+  position: relative;
+  margin-top: 0;
+}
+
+
+.label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 50px;
+}
+$label-color: #bd3e83;
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+}
+$card-header-background-color: #fafafa;
+$card-header-color: #bd3e83;
+.card-header-title {
+  font-family: 'Oswald', sans-serif;
+}
+.subtitle {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.card-image {
+  filter: grayscale(100%);
+}
+.content {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+// form {
+//   display: flex;
+//   flex-direction: row;
+// }
+//
+// .field {
+//   display: flex;
+//   flex-direction: row;
+// }
+//
+// .search-line {
+//   display: flex;
+//   flex-direction: row;
+// }
+
+
+$primary: #bd3e83;
+$link: #dd57a0;
+// #f8d1e6;
+@import 'bulma'
