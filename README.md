@@ -2,7 +2,7 @@
 
 React Hackathon for SEI London
 
-**Timeframe**: 2 day Pair Programming
+**Timeframe**: 2 day Pair Programming with @lifearoundhere
 
 Notable Technologies/Libarys used:
 
