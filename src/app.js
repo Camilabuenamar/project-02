@@ -5,6 +5,7 @@ import IndexPage from './components/Index'
 import FormPage from './components/Form'
 import ResultsPage from './components/Results'
 import './style.scss'
+import banner from './assets/banner.png'
 
 class App extends React.Component {
 
@@ -12,7 +13,7 @@ class App extends React.Component {
     return (
       <HashRouter>
         <figure className="image">
-          <img src="../../assets/El Camello - Banner.png" alt={this.props.EventName} />
+          <img src={banner} alt={this.props.EventName} />
         </figure>
         <Switch>
           <Route exact path='/results/:keyword/:location' component={ResultsPage} />
