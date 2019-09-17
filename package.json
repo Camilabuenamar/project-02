@@ -41,9 +41,9 @@
     "webpack-dev-server": "^3.7.2"
   },
   "bugs": {
-    "url": "https://github.com/Lifearoundhere/Project-2/issues"
+    "url": "https://camilabuenamar.com/project-02/issues"
   },
-  "homepage": "https://github.com/Lifearoundhere/Project-2#readme",
+  "homepage": "https://camilabuenamar.com/project-02/src/index.html",
   "devDependencies": {
     "babel-eslint": "^10.0.2",
     "eslint": "^6.1.0",
