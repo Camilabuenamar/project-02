@@ -40,7 +40,7 @@ class Results extends React.Component {
   }
 
   fetchReed() {
-    const reedKey = process.env.REED_KEY
+    const key = process.env.REED_KEY
     axios.get('https://cors-anywhere.herokuapp.com/https://www.reed.co.uk/api/1.0/search', {
       params: {
         keywords: this.props.match.params.keyword,
@@ -48,7 +48,7 @@ class Results extends React.Component {
         distancefromlocation: 10
       },
       headers: {
-        Authorization: `Basic ${reedKey}`,
+        Authorization: `Basic ${key}`,
         'X-Requested-With': 'XMLHttpRequest'
       }
     })
@@ -61,17 +61,17 @@ class Results extends React.Component {
   }
 
   fetchEventbrite() {
-    const eventbriteKey = process.env.EVENT_BITE_KEY
+    const key = process.env.EVENT_BITE_KEY
     axios.get('https://cors-anywhere.herokuapp.com/https://www.eventbriteapi.com/v3/events/search?', {
       params: {
-        token: eventbriteKey,
+        token: key,
         'location.address': this.props.match.params.location,
         'location.within': '10km',
         expand: 'venue',
         categories: '101,102'
 
       },
-      headers: { Authorization: `Bearer ${eventbriteKey}` }
+      headers: { Authorization: `Bearer ${key}` }
     })
 
       .then(res => {
