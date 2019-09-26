@@ -47,7 +47,10 @@ class Results extends React.Component {
         location: this.props.match.params.location,
         distancefromlocation: 10
       },
-      headers: { Authorization: `Basic ${key}` }
+      headers: {
+        Authorization: `Basic ${key}`,
+        Origin: 'https://camilabuenamar.com'
+      }
     })
       .then(res => {
 

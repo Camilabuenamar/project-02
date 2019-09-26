@@ -25,7 +25,10 @@ class IndexPage extends React.Component {
         location: this.props.match.params.location,
         distancefromlocation: 15
       },
-      headers: { Authorization: `Basic ${key}` }
+      headers: {
+        Authorization: `Basic ${key}`,
+        Origin: 'https://camilabuenamar.com'
+      }
     })
       .then(res => {
         this.setState({ data: res.data.results })
