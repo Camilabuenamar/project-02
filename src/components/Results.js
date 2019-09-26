@@ -49,7 +49,7 @@ class Results extends React.Component {
       },
       headers: {
         Authorization: `Basic ${key}`,
-        Origin: 'https://camilabuenamar.com'
+        origin: 'https://camilabuenamar.com'
       }
     })
       .then(res => {
