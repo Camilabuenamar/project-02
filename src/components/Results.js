@@ -71,7 +71,7 @@ class Results extends React.Component {
         categories: '101,102'
 
       },
-      headers: { Authorization: `Bearer ${key}==` }
+      headers: { Authorization: `Bearer ${key}` }
     })
 
       .then(res => {

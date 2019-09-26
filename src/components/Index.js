@@ -26,7 +26,7 @@ class IndexPage extends React.Component {
         distancefromlocation: 15
       },
       headers: {
-        Authorization: `Basic ${key}==`,
+        Authorization: `Basic ${key}`,
         'X-Requested-With': 'XMLHttpRequest'
       }
     })
