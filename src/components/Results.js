@@ -49,7 +49,8 @@ class Results extends React.Component {
       },
       headers: {
         Authorization: `Basic ${key}`,
-        origin: 'https://camilabuenamar.com'
+        origin: 'http://camilabuenamar.com',
+        'X-Requested-With': 'XMLHttpRequest'
       }
     })
       .then(res => {

@@ -27,7 +27,8 @@ class IndexPage extends React.Component {
       },
       headers: {
         Authorization: `Basic ${key}`,
-        origin: 'https://camilabuenamar.com'
+        Origin: 'http://camilabuenamar.com',
+        'X-Requested-With': 'XMLHttpRequest'
       }
     })
       .then(res => {
