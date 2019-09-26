@@ -48,7 +48,7 @@ class Results extends React.Component {
         distancefromlocation: 10
       },
       headers: {
-        Authorization: `Basic ${key}`,
+        Authorization: `Basic ${key}==`,
         'X-Requested-With': 'XMLHttpRequest'
       }
     })
