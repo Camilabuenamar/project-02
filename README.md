@@ -1,4 +1,4 @@
-# **SEI-Project-01: :camel: El Camello** **REACT HACKATHON**
+# **SEI-Project-02: :camel: El Camello** **REACT HACKATHON**
 
 **Timeframe**: 2 days of pair coding with [Prab Singh](http://https://github.com/Lifearoundhere)
 
@@ -47,30 +47,30 @@ Notable Technologies/Libraries used:
 For this reason we had to explore different options, read documentation and test different APIs that could satisfy our needs and time limit (2 days).
 - **Importing the data:** To import the data we needed to learn the proper way to import exclusively the data that the user requested and merge the both types of responses.
   - Making the requests that make sense: This was one of the most important processes of our app, thats why we had to find a way by which we could make it easy for the user but could work with both APIs. For example the requests for Reed needed to be done by adding info like keywords, location and distance to the url and the key on the header. In the other hand, to make requests to Eventbrite we also needed to add some specific categories we searched before and the key in the URL. In the following code you can see in detail how we made each request.
-```javascript
-    axios.get('https://cors-anywhere.herokuapp.com/https://www.reed.co.uk/api/1.0/search', {
-    params: {
-      keywords: this.props.match.params.keyword,
-      location: this.props.match.params.location,
-      distancefromlocation: 10
-    },
-    headers: {
-      Authorization: `Basic ${reedKey}`,
-      'X-Requested-With': 'XMLHttpRequest'
-    }
-
-    axios.get('https://cors-anywhere.herokuapp.com/https://www.eventbriteapi.com/v3/events/search?', {
+  ```javascript
+      axios.get('https://cors-anywhere.herokuapp.com/https://www.reed.co.uk/api/1.0/search', {
       params: {
-        token: eventbriteKey,
-        'location.address': this.props.match.params.location,
-        'location.within': '10km',
-        expand: 'venue',
-        categories: '101,102'
-
+        keywords: this.props.match.params.keyword,
+        location: this.props.match.params.location,
+        distancefromlocation: 10
       },
-      headers: { Authorization: `Bearer ${eventbriteKey}` }
-    })
-```    
+      headers: {
+        Authorization: `Basic ${reedKey}`,
+        'X-Requested-With': 'XMLHttpRequest'
+      }
+
+      axios.get('https://cors-anywhere.herokuapp.com/https://www.eventbriteapi.com/v3/events/search?', {
+        params: {
+          token: eventbriteKey,
+          'location.address': this.props.match.params.location,
+          'location.within': '10km',
+          expand: 'venue',
+          categories: '101,102'
+
+        },
+        headers: { Authorization: `Bearer ${eventbriteKey}` }
+      })
+  ```    
 
   - Merging the data: This part of the process was also very challenging because as the information of each API was different, we needed to display it different. This meant we had to do it by extracting the relevant indexes and blend them. Also we decided to create a new tag 'isA' or 'isB' to different if it was a job offer or an event.
 
