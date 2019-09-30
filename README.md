@@ -1,24 +1,12 @@
 # **SEI-Project-02: :camel: El Camello** **REACT HACKATHON**
 
+An APP to find jobs and networking events using public APIs.
+
 **Timeframe**: 2 days of pair coding with [Prab Singh](http://https://github.com/Lifearoundhere)
 
 [Here you can check the website!](http://camilabuenamar.github.io/project-02)
 
 ![Screenshot of the App](https://imgur.com/RpKrF55.jpg)
-
-
-Notable Technologies/Libraries used:
-
-- HTML5
-- CSS 3
-- JavaScript (ES6)
-- React (React-DOM, React-Router-DOM, React-Toastify)
-- Webpack (with CLI)
-- git
-- Babel
-- Lodashs
-- Axios
-- Bulma
 
 ## Brief:
 - Uses 2 public APIs (Reed and Eventbrite).
