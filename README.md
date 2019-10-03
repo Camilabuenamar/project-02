@@ -1,6 +1,6 @@
-# **SEI-Project-02: :camel: El Camello** **REACT HACKATHON**
+# **SEI-Project-02: :camel: El Camello**
 
-An APP to find jobs and networking events using public APIs.
+### REACT HACKATHON: An APP to find jobs and networking events using public APIs.
 
 **Timeframe**: 2 days of pair coding with [Prab Singh](http://https://github.com/Lifearoundhere)
 
